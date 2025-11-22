@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encerramento Ano Letivo 2025</title>
+  <meta name="color-scheme" content="dark light">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo"><h1>🎓 Encerramento 2025</h1></div>
+      <div class="header-buttons">
+        <button id="theme-toggle" aria-label="Alternar tema">🌓 Tema</button>
+        <button id="show-essays-btn">📚 Redações</button>
+      </div>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#mensagens">Mural</a></li>
+          <li><a href="#essays-section">Redações</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="inicio">
+      <h2>Celebrando um Ano Inesquecível</h2>
+      <p>Juntos construímos memórias que levaremos para sempre.</p>
+    </section>
+
+    <section class="countdown" id="countdown-section">
+      <h2>Contagem Regressiva para o Fim do Ano Letivo</h2>
+      <div class="countdown-timer" id="countdown">
+        <div class="time-unit"><span id="days">00</span><p>Dias</p></div>
+        <div class="time-unit"><span id="hours">00</span><p>Horas</p></div>
+        <div class="time-unit"><span id="minutes">00</span><p>Minutos</p></div>
+        <div class="time-unit"><span id="seconds">00</span><p>Segundos</p></div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <h2>📸 Galeria de Momentos</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=500&fit=crop" alt="Alunos no primeiro dia de aula celebrando">
+          <div class="gallery-caption"><h3>Primeiro Dia de Aula</h3><p>O início de uma jornada incrível</p></div>
+        </div>
+        <div class="gallery-item">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&h=500&fit=crop" alt="Feira de ciências com estudantes exibindo projetos">
+          <div class="gallery-caption"><h3>Feira de Ciências</h3><p>Descobrindo novos horizontes</p></div>
+        </div>
+        <div class="gallery-item">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1544928147-79a2dbc1f389?w=800&h=500&fit=crop" alt="Alunos praticando esportes em campo escolar">
+          <div class="gallery-caption"><h3>Dia do Esporte</h3><p>Competição e trabalho em equipe</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="agenda">
+      <h2>📅 Agenda de Encerramento</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <p class="timeline-date">19 Dez 2025</p>
+          <h3>Entrega de Boletins</h3>
+          <p>Recebimento das notas finais e feedback do ano letivo.</p>
+        </article>
+        <article class="timeline-item">
+          <p class="timeline-date">19 Dez 2025</p>
+          <h3>Último Dia Letivo</h3>
+          <p>Despedida oficial e início das férias.</p>
+        </article>
+        <article class="timeline-item">
+          <p class="timeline-date">Data a definir</p>
+          <h3>Cerimônia de Formatura</h3>
+          <p>Auditório principal, traje formal.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="mensagens">
+      <h2>💌 Mural de Mensagens</h2>
+      <form id="messageForm" class="message-form" aria-label="Formulário de mensagens">
+        <div class="form-group"><label for="name">Nome</label><input type="text" id="name" name="name" required placeholder="Seu nome"></div>
+        <div class="form-group"><label for="message">Mensagem</label><textarea id="message" name="message" required placeholder="Digite sua mensagem"></textarea></div>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+      <div id="messageList" class="message-list" aria-live="polite"></div>
+    </section>
+
+    <section id="essays-section" class="essays" style="display: none;">
+      <h2>📝 Redações</h2>
+      <nav id="essays-toc" class="essays-toc"><ul></ul></nav>
+      <div id="essays-accordion" class="essays-accordion"></div>
+    </section>
+  </main>
+
+  <!-- Botão de acessibilidade fixo no canto inferior direito -->
+  <div id="accessibility-menu" class="accessibility-menu">
+    <button id="increase-font">A+ Fonte</button>
+    <button id="decrease-font">A- Fonte</button>
+    <button id="toggle-contrast">Alto Contraste</button>
+  </div>
+
+  <footer>
+    <div class="container footer-content">
+      <div><h3>Sobre</h3><p>Este site comemora o encerramento do ano letivo de 2025.</p></div>
+      <div><h3>Contato</h3><p>Email: contato@escola.edu.br</p></div>
+    </div>
+    <div class="copyright">&copy; 2025 Escola. Todos os direitos reservados.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
